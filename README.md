@@ -69,3 +69,22 @@ Summary of actions:
 - The feature branch 'feature/feature2_branch' was merged into 'develop'
 - Feature branch 'feature/feature2_branch' has been removed
 - You are now on branch 'develop'
+
+
+mitanandeesh@Mitas-MBP git-workflow % git flow release start release-0.1.0
+Switched to a new branch 'release/release-0.1.0'
+
+Summary of actions:
+- A new branch 'release/release-0.1.0' was created, based on 'develop'
+- You are now on branch 'release/release-0.1.0'
+
+Follow-up actions:
+- Bump the version number now!
+- Start committing last-minute fixes in preparing your release
+- When done, run:
+
+     git flow release finish 'release-0.1.0'
+
+mitanandeesh@Mitas-MBP git-workflow % git status
+On branch release/release-0.1.0
+nothing to commit, working tree clean
