@@ -53,3 +53,19 @@ Summary of actions:
 - The feature branch 'feature/feature1_branch' was merged into 'develop'
 - Feature branch 'feature/feature1_branch' has been removed
 - You are now on branch 'develop'
+
+
+mitanandeesh@Mitas-MBP git-workflow % git flow feature finish  feature/feature2_branch
+No branch matches prefix 'feature/feature2_branch'
+mitanandeesh@Mitas-MBP git-workflow % git flow feature finish feature2_branch 
+Switched to branch 'develop'
+Updating 87be4a2..60dcbdb
+Fast-forward
+ README.md | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+Deleted branch feature/feature2_branch (was 60dcbdb).
+
+Summary of actions:
+- The feature branch 'feature/feature2_branch' was merged into 'develop'
+- Feature branch 'feature/feature2_branch' has been removed
+- You are now on branch 'develop'
