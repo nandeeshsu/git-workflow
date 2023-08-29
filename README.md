@@ -103,3 +103,61 @@ Follow-up actions:
 - When done, run:
 
      git flow release finish 'release-0.2.0'
+
+     mitanandeesh@Mitas-MBP git-workflow % git flow release finish release-0.2.0    
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Merge made by the 'ort' strategy.
+ README.md         | 15 +++++++++++++++
+ release-0.2.0.txt |  0
+ 2 files changed, 15 insertions(+)
+ create mode 100644 release-0.2.0.txt
+Switched to branch 'develop'
+Merge made by the 'ort' strategy.
+ README.md         | 15 +++++++++++++++
+ release-0.2.0.txt |  0
+ 2 files changed, 15 insertions(+)
+ create mode 100644 release-0.2.0.txt
+Deleted branch release/release-0.2.0 (was 3911cf6).
+
+Summary of actions:
+- Latest objects have been fetched from 'origin'
+- Release branch has been merged into 'main'
+- The release was tagged 'vrelease-0.2.0'
+- Release branch has been back-merged into 'develop'
+- Release branch 'release/release-0.2.0' has been deleted
+
+mitanandeesh@Mitas-MBP git-workflow % git status
+On branch develop
+nothing to commit, working tree clean
+
+
+It seems that the remote feature branch is deleted only if you call git flow feature finish with -F.
+
+However, this fetches the remote before finishing the feature. From the docs:
+
+-F fetch from $ORIGIN before performing finish
+Otherwise you can delete the remote branch manually with:
+
+git push origin :feature/new
+
+
+mitanandeesh@Mitas-MBP git-workflow % git branch -r
+  origin/develop
+  origin/feature/feature1_branch
+  origin/feature/feature2_branch
+  origin/main
+  origin/release/release-0.1.0
+  origin/release/release-0.2.0
+mitanandeesh@Mitas-MBP git-workflow % git push origin :feature/feature1_branch 
+To https://github.com/nandeeshsu/git-workflow.git
+ - [deleted]         feature/feature1_branch
+mitanandeesh@Mitas-MBP git-workflow % git push origin :feature/feature2_branch
+To https://github.com/nandeeshsu/git-workflow.git
+ - [deleted]         feature/feature2_branch
+mitanandeesh@Mitas-MBP git-workflow % git push origin :release/release-0.1.0  
+To https://github.com/nandeeshsu/git-workflow.git
+ - [deleted]         release/release-0.1.0
+mitanandeesh@Mitas-MBP git-workflow % git push origin :release/release-0.2.0 
+To https://github.com/nandeeshsu/git-workflow.git
+ - [deleted]         release/release-0.2.0
