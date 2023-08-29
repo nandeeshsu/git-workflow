@@ -40,3 +40,16 @@ Changes not staged for commit:
 	modified:   README.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
+
+mitanandeesh@Mitas-MBP git-workflow %  git flow feature finish feature1_branch
+Switched to branch 'develop'
+Updating 57327fc..87be4a2
+Fast-forward
+ README.md | 42 ++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 42 insertions(+)
+Deleted branch feature/feature1_branch (was 87be4a2).
+
+Summary of actions:
+- The feature branch 'feature/feature1_branch' was merged into 'develop'
+- Feature branch 'feature/feature1_branch' has been removed
+- You are now on branch 'develop'
