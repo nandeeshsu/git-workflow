@@ -161,3 +161,18 @@ To https://github.com/nandeeshsu/git-workflow.git
 mitanandeesh@Mitas-MBP git-workflow % git push origin :release/release-0.2.0 
 To https://github.com/nandeeshsu/git-workflow.git
  - [deleted]         release/release-0.2.0
+
+
+ mitanandeesh@Mitas-MBP git-workflow % git flow hotfix start rar-12345     
+Switched to a new branch 'hotfix/rar-12345'
+
+Summary of actions:
+- A new branch 'hotfix/rar-12345' was created, based on 'main'
+- You are now on branch 'hotfix/rar-12345'
+
+Follow-up actions:
+- Bump the version number now!
+- Start committing your hot fixes
+- When done, run:
+
+     git flow hotfix finish 'rar-12345'
